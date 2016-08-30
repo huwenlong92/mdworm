@@ -5,7 +5,7 @@
 
 A very simple markdown viewer implemented by PHP, [ParseDown](http://parsedown.org) and [Mou](http://25.io/mou/)
 
-[中文版说明点这里](README_CN.md)
+[中文版说明](README_CN.md)
 
 ## What is Markdown ?
 
