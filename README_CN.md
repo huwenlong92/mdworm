@@ -1,4 +1,4 @@
-# MD Worm
+# Markdown Worm
 
 ---
 ![logo](res/img/logo.jpg)
