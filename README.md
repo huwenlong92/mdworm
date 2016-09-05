@@ -1,9 +1,12 @@
-# Markdown Worm
+# Markdown Worm #
 
 ---
 ![logo](res/img/logo.jpg)
 
-A very simple markdown viewer implemented by PHP, [ParseDown](http://parsedown.org) and [Mou](http://25.io/mou/)
+__v1.0.1__
+
+A very simple markdown viewer implemented in PHP, [ParseDown](http://parsedown.org), [Mou](http://25.io/mou/)
+and [HighlightJS](https://highlightjs.org/)
 
 [中文版说明](README_CN.md)
 
@@ -11,36 +14,30 @@ A very simple markdown viewer implemented by PHP, [ParseDown](http://parsedown.o
 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-BTW, this paragraph is written in Markdown too.
+## Usage
 
-## Use Case
-
-I use markdown everyday for writing technology & problem notes, but what is a easier way for you share them,
-especially between colleages ? For example, someday Dave asks you 'Dude, have you ran into this problem before?
-
-'Yes!' you say, 'I wrote a Markdown file about it, and it has been uploaded to my server at http://192.168.1.111/mdWorm'
-
-'A FTP server ?' Dave asked.
-
-'No!' you say, 'When you visit the page, the PHP code converts the markdown file to HTML for you so you don't have to download anything at all!'
+Easy storing & sharing markdown files. Use your favorite Markdown editor (like Mou), then upload your md to server, 
+grab a coffee and enjoy file list and automatic code highlighting. 
 
 ## Showcase
-###1. Markdown File List
+###1. Generated Markdown File List
 
 ![logo](res/img/showcase_1.jpg)
 
-###2. Converted by Parsedown and displayed by CSS from Mou
+###2. Markdown will be converted to html by [ParseDown](http://parsedown.org/)
 
 ![logo](res/img/showcase_2.jpg)
 
+###3. Code syntax will be auto-detected and highlighted by [Highlight.js](https://highlightjs.org/)
+
+![logo](res/img/showcase_3.jpg)
 
 ## Install
 
 ### Mac & Win
 
 1. Install [XAMPP](https://www.apachefriends.org/index.html)
-
-2. Download mdWorm & Unzip it to `xampp/htdocs`
+2. Download mdWorm release & Unzip it to `xampp/htdocs`
 3. under XAMPP GUI, start Apache Server
 4. Open browser and type `localhost/mdWorm`
 
@@ -48,11 +45,11 @@ especially between colleages ? For example, someday Dave asks you 'Dude, have yo
 
 1. Install httpd
 
-		sudo yum install httpd
+		sudo yum install httpd -y
 
 2. Install PHP
 
-		sudo yum install php
+		sudo yum install php -y
 
 3. Download mdWorm & Unzip it to `/var/www/html`
 
@@ -95,4 +92,4 @@ especially between colleages ? For example, someday Dave asks you 'Dude, have yo
 ### MIT License
 
 ===
-Beichen Li 2016-8-29
+Beichen Li 2016-9-1

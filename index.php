@@ -1,7 +1,7 @@
 <?php
 /**
 * mdWorm
-* v1.0
+* v1.0.1
 * A very simple markdown reader in PHP
 *
 * ./index.php
@@ -130,7 +130,7 @@ if ($noData)
 }
 echo "<hr>\n";
 // echo copyright
-echo "<p>mdWorm v1.0 @ bcli 2016-8-29 <a href='https://github.com/bclicn/mdWorm'>GitHub</a></p>";
+echo "<p>mdWorm v1.0.1 @ bcli 2016-9-5 <a href='https://github.com/bclicn/mdWorm'>GitHub</a></p>";
 // echo page tail
 echo $tail;
 ?>

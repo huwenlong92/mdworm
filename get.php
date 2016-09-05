@@ -1,7 +1,7 @@
 <?php
 /**
 * mdWorm
-* v1.0
+* v1.0.1
 * A very simple markdown reader in PHP
 *
 * ./get.php
@@ -9,7 +9,7 @@
 *
 * This script includes Parsedown.php, which is created by Emanuil Rusev at http://parsedown.org
 * @author bcli
-* @since  v1.0
+* @since  v1.0.1
 */
 
 // include markdown parser class
