@@ -1,99 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8479f6ac-3fc7-48b5-91ed-9bdf7bbafd7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/brown-papersq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/pojoaque.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/school-book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/img/showcase_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/md/code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/agate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/androidstudio.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/arduino-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/arta.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/ascetic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-cave-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-cave-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-dune-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-dune-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-estuary-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-estuary-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-forest-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-forest-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-heath-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-heath-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-lakeside-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-lakeside-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-plateau-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-plateau-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-savanna-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-savanna-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-seaside-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-seaside-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-sulphurpool-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atelier-sulphurpool-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atom-one-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/atom-one-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/brown-paper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/codepen-embed.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/color-brewer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/darcula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/darkula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/dracula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/far.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/foundation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/github-gist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/github.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/googlecode.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/grayscale.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/gruvbox-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/gruvbox-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/hopscotch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/hybrid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/idea.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/ir-black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/kimbie.dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/kimbie.light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/magula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/mono-blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/monokai-sublime.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/monokai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/obsidian.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/ocean.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/paraiso-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/paraiso-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/pojoaque.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/purebasic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/qtcreator_dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/qtcreator_light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/railscasts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/rainbow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/school-book.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/solarized-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/solarized-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/sunburst.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/tomorrow-night-blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/tomorrow-night-bright.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/tomorrow-night-eighties.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/tomorrow-night.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/tomorrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/vs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/xcode.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/xt256.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/css/zenburn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/js/highlight.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/icon/favicon.ico" afterPath="$PROJECT_DIR$/res/icon/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README_CN.md" afterPath="$PROJECT_DIR$/README_CN.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get.php" afterPath="$PROJECT_DIR$/get.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/md/hello.md" afterPath="$PROJECT_DIR$/md/hello.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/html/head.html" afterPath="$PROJECT_DIR$/res/html/head.html" />
-    </list>
+    <list default="true" id="8479f6ac-3fc7-48b5-91ed-9bdf7bbafd7d" name="Default" comment="" />
     <ignored path="mdWorm.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -283,6 +191,48 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="mdWorm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdWorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -810,12 +760,12 @@
       <updated>1472515560873</updated>
       <workItem from="1472515563092" duration="3652000" />
       <workItem from="1472524884219" duration="628000" />
-      <workItem from="1473055676094" duration="3652000" />
+      <workItem from="1473055676094" duration="3717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7932000" />
+    <option name="totallyTimeSpent" value="7997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1461" y="56" width="1259" height="762" extended-state="0" />
