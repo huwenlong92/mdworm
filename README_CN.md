@@ -15,7 +15,7 @@ Markdown是一个轻量级标记语言，能够被轻易的转化为HTML或者PD
 
 ## 使用
 
-建立一个能够执行PH脚本的HTTP服务器(比如阿帕奇),将mdWorm放入网站目录,将你的Markdown文件上传到`./md`文件夹下.
+建立一个能够执行PHP脚本的HTTP服务器(比如阿帕奇),将mdWorm放入网站目录,将你的Markdown文件上传到`./md`文件夹下.
 mdWorm会自动列出`./md`文件夹下的所有Markdown文件,并在你点击链接时自动将其解析为HTML,自动检测代码类型并高亮(无需在Markdown中
 指定代码类型,比如````java`).
 

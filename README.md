@@ -16,8 +16,7 @@ Markdown is a lightweight markup language with plain text formatting syntax desi
 
 ## Usage
 
-Easy storing & sharing markdown files. Use your favorite Markdown editor (like Mou), then upload your md to server, 
-grab a coffee and enjoy file list and automatic code highlighting. 
+Act as a simple markdown file server. Useful on storing & sharing Markdown notes & documents.
 
 ## Showcase
 ###1. Generated Markdown File List
