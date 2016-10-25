@@ -1,97 +1,98 @@
 # Markdown Worm #
 
 ---
-![logo](res/img/logo.jpg)
 
-__v1.0.1__
+![logo](public/img/logo.jpg)
 
-一个基于 PHP, [ParseDown](http://parsedown.org),[Mou](http://25.io/mou/)和[HighlightJS](https://highlightjs.org/)实现的非常简单的Markdown浏览器  
+__v2.0.0__
+
+GoLang Markdown浏览器, 基于[golang-commonmark/markdown](https://github.com/golang-commonmark/markdown), 
+[Mou](http://25.io/mou/), 和 [HighlightJS](https://highlightjs.org/)
 
 [English Version](README.md)
 
 ## 什么是Markdown ?
 
-Markdown是一个轻量级标记语言，能够被轻易的转化为HTML或者PDF。Markdown经常被用来撰写readme文件，用来在论坛上发布消息，或者将简单的文本转化为复杂的表现形式。
+一种标记语言,写文档专用.作为码农不会用Markdown写笔记的,砍头!
 
-## 使用
+## 像个男人一样~~十秒就射~~ 分享你的文件！
 
-建立一个能够执行PHP脚本的HTTP服务器(比如阿帕奇),将mdWorm放入网站目录,将你的Markdown文件上传到`./md`文件夹下.
-mdWorm会自动列出`./md`文件夹下的所有Markdown文件,并在你点击链接时自动将其解析为HTML,自动检测代码类型并高亮(无需在Markdown中
-指定代码类型,比如````java`).
+![boss](public/img/like-a-boss.jpg)
 
-## 展示
-###1. 显示Markdown文件列表
+Markdown Worm一般部署在Linux服务器上，用于在公司内网或者小范围内分享各种Markdown文档。它显示时可以自动吧Markdown转换成HTML，并且用JavaScript做代码高亮，方便你的浏览。
 
-![logo](res/img/showcase_1.jpg)
+## 自v1.0.1的改动
 
-###2. 使用Parsedown进行HTML转码，Mou的CSS进行显示
+1. 用GoLang代替PHP，现在你什么都不需要安装就可以直接部署__release tarball__了
+2. Markdown Worm现在可以识别__md__下的文件夹了
+3. 由于Windows的路径和Mac.Linux不太一样，所以没有放出Windows编译版本。
 
-![logo](res/img/showcase_2.jpg)
+## 传销
+###1. 文档列表
 
-###3. 自动检测语言类型并高亮代码
+![logo](public/img/showcase-1.jpg)
 
-![logo](res/img/showcase_3.jpg)
-
-## 安装
-请将你的Markdown文件上传到`./md`目录下，Linux用户请务必将FTP umask设置为022或者markdown文件权限644
-
-### Mac & Win
-
-1. 安装 [XAMPP](https://www.apachefriends.org/index.html)
-2. 下载 mdWorm & 解压到 `xampp/htdocs`
-3. 在XAMPP图形化界面下启动 Apache Server
-4. 打开浏览器输入链接`localhost/mdWorm`
+###2. Markdown文件转换成HTML[golang-commonmark/markdown](https://github.com/golang-commonmark/markdown)
 
 
-### RHEL & CentOS
+![logo](public/img/showcase-2.jpg)
 
-1. 安装httpd
+###3. HighLightJS语法高亮 [Highlight.js](https://highlightjs.org/)
 
-		sudo yum install httpd -y
+![logo](public/img/showcase-3.jpg)
 
-2. 安装PHP
+## 注意
 
-		sudo yum install php -y
+由于更换了新的Markdown解析器`golang-commonmark`，现在你必须把`#title#`改成`# title #`或者`# title`否则无法解析
 
-3. 下载 mdWorm & 解压到`/var/www/html`
+##  安装
 
-		cd /var/www/html
-		wget <mdWorm-release-tarball>
-		tar -zxvf <mdWorm-release-tarball>
+### Mac & Linux
 
-4. 启动Apache Server
+1. 下载解压
 
-		service httpd start
+    	cd /to/dir/
+    	# For Mac
+    	wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+    	tar zxvf mdworm-2.0.0-darwin.tar.gz
+    
+    	# For Linux
+   		wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+    	tar zxvf mdworm-2.0.0-linux.tar.gz
+    
+    
+2. 运行
+    
+   		cd mdworm-2.0.0-*
+   		./mdworm
+   
+3. 打开浏览器输入 `localhost:2333`
 
-5. 打开浏览器输入
+## 参数
 
-		localhost/mdWorm
+要修改默认服务器端口（2333），使用 `-p`, 要修改默认代码高亮样式，使用`-t` 。全部代码高亮样式见`./public/css/`,下面是一些例子
 
-### Debian & Ubuntu
-1. 安装apache2
+    # 更改服务器端口为6666
+    ./mdworm -p 6666
+    # 更改代码高亮样式为 darcula
+    ./mdworm -t darcula
+    # 更改服务器端口为6666 并 更改代码高亮样式为 darcula
+    ./mdworm -p 6666 -t darcula
 
-		sudo apt-get install apache2
+一般你会想让这玩意作为背景线程运行的，在命令结尾加上`&`就好了，比如
+	
+	./mdworm &
 
-2. 安装PHP
+## Github真TMD无聊
 
-		sudo apt-get install php5 libapache2-mod-php5
+感觉我基本都是在给自己发`release tarbar`，这么下去我还发个球？又不是所有码农都能达到大神级水平的，难道非得我写一个绅士资源下载器才有人看吗（大雾）？
+对于你们这些人，老子只想说一句：
 
-3. 下载 mdWorm & 解压到`/var/www/html`
+__大爷右上角点颗星儿吧！小的求您了还不行吗？__
 
-		cd /var/www/html
-		wget <mdWorm-release-tarball>
-		tar -zxvf <mdWorm-release-tarball>
+__您看过了项目Issue拦留个凸(-_-)凸也行啊！__
 
-4. 启动Apache Server
-
-		service apache2 start
-
-5. 打开浏览器输入
-
-		localhost/mdWorm
-
-
-### MIT License
+## MIT License
 
 ===
-Beichen Li 2016-9-5
+Beichen Li 2016-10-24

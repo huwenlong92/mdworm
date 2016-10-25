@@ -27,7 +27,7 @@ Check [this out](https://github.com/bclicn/PsychoCat) !
 
 ## Image ##
 
-![Logo!](res/img/logo.jpg "Logo") Excuse me ?? !
+![Logo!](/public/img/logo.jpg "Logo") Excuse me ?? !
 
 ## Table ##
 

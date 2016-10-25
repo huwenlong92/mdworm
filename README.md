@@ -1,12 +1,13 @@
 # Markdown Worm #
 
 ---
-![logo](res/img/logo.jpg)
 
-__v1.0.1__
+![logo](public/img/logo.jpg)
 
-A very simple markdown viewer implemented in PHP, [ParseDown](http://parsedown.org), [Mou](http://25.io/mou/)
-and [HighlightJS](https://highlightjs.org/)
+__v2.0.0__
+
+GoLang Markdown viewer, based on [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown), 
+[Mou](http://25.io/mou/), and [HighlightJS](https://highlightjs.org/)
 
 [中文版说明](README_CN.md)
 
@@ -14,81 +15,83 @@ and [HighlightJS](https://highlightjs.org/)
 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-## Usage
+## Share your Markdown ~~Like a Man~~ LIKE A BOSS
 
-Act as a simple markdown file server. Useful on storing & sharing Markdown notes & documents.
+![boss](public/img/like-a-boss.jpg)
+
+Markdown Worm act as a simple markdown file server.
+Useful on storing & sharing Markdown notes & documents. Especially on a local network with
+you colleagues (I'm doing this right now) 
+
+## Changes since v1.0.1
+
+1. Completely replaced PHP by GoLang, plus you won't need GoLang to run __release tar balls__
+2. You can now add directory under folder __md__
+3. There's __no windows binary release__ this time since I don't use windows (a big virus) :3
 
 ## Showcase
 ###1. Generated Markdown File List
 
-![logo](res/img/showcase_1.jpg)
+![logo](public/img/showcase-1.jpg)
 
-###2. Markdown will be converted to html by [ParseDown](http://parsedown.org/)
+###2. Markdown will be converted to html by [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown)
 
-![logo](res/img/showcase_2.jpg)
+
+![logo](public/img/showcase-2.png)
 
 ###3. Code syntax will be auto-detected and highlighted by [Highlight.js](https://highlightjs.org/)
 
-![logo](res/img/showcase_3.jpg)
+![logo](public/img/showcase-3.jpg)
+
+## Notice
+
+`golang-commonmark` has a weird feature, which __requires__ you to add a space between
+title text and hash tags, for example `#title#` won't be parsed correctly, but
+`# title #` will work fine
 
 ## Install
 
-### Mac & Win
+### Mac & Linux
 
-1. Install [XAMPP](https://www.apachefriends.org/index.html)
-2. Download mdWorm release & Unzip it to `xampp/htdocs`
-3. under XAMPP GUI, start Apache Server
-4. Open browser and type `localhost/mdWorm`
+1. Download & Unzip
 
-### RHEL & CentOS
+    cd /to/dir/
+    # For Mac
+    wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+    tar zxvf mdworm-2.0.0-darwin.tar.gz
+    
+    # For Linux
+    wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+    tar zxvf mdworm-2.0.0-linux.tar.gz
+    
+    
+2. Run
+    
+   cd mdworm-2.0.0-*
+   ./mdworm
+   
+3. Open your browser and type `localhost:2333`
 
-1. Install httpd
+## Arguments
 
-		sudo yum install httpd -y
+You can use `-p` to change the default port (`2333`), `-t` to change default code theme (`./public/css/themes/default.css`).
+A full list of code theme can be found under `./public/css/themes/`, here are argument examples:
 
-2. Install PHP
+    # listen on port 6666
+    ./mdworm -p 6666
+    # change default theme to darcula
+    ./mdworm -t darcula
+    # listen on port 6666 & change default theme to darcula
+    ./mdworm -p 6666 -t darcula
 
-		sudo yum install php -y
+## Github is a lonely place
 
-3. Download mdWorm & Unzip it to `/var/www/html`
+Well, it looks like __I AM JUST RELEASING
+TARBALLS TO MYSELF!!!!__. For god sake no matter what you think of my code, just leave 
+a comment under the issues tab. I just want to know if there's still somebody alive
+on this website, thanks.
 
-		cd /var/www/html
-		wget <mdWorm-release-tarball>
-		tar -zxvf <mdWorm-release-tarball>
-
-4. Start Apache Server
-
-		service httpd start
-
-5. Open browser and type
-
-		localhost/mdWorm
-
-### Debian & Ubuntu
-1. Install apache2
-
-		sudo apt-get install apache2
-
-2. Install PHP
-
-		sudo apt-get install php5 libapache2-mod-php5
-
-3. Download mdWorm & and unzip to`/var/www/html`
-
-		cd /var/www/html
-		wget <mdWorm-release-tarball>
-		tar -zxvf <mdWorm-release-tarball>
-
-4. Start Apache Server
-
-		service apache2 start
-
-5. Open browser and type
-
-		localhost/mdWorm
-
-
-### MIT License
+## MIT License
 
 ===
-Beichen Li 2016-9-1
+Beichen Li 2016-10-24

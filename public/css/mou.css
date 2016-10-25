@@ -11,22 +11,22 @@ blockquote {
 }
 body {
     font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 19px;
     color: #737373;
     background-color: white;
     margin: 10px 13px 10px 13px;
 }
 table {
-	margin: 10px 0 15px 0;
-	border-collapse: collapse;
+    margin: 10px 0 15px 0;
+    border-collapse: collapse;
 }
 td,th {
-	border: 1px solid #ddd;
-	padding: 3px 10px;
+    border: 1px solid #ddd;
+    padding: 3px 10px;
 }
 th {
-	padding: 5px 10px;
+    padding: 5px 10px;
 }
 
 a {
@@ -102,7 +102,7 @@ code {
     background-color: #fee9cc;
     color: rgba(0, 0, 0, 0.75);
     padding: 1px 3px;
-    font-size: 11px;
+    font-size: 12px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -120,7 +120,8 @@ pre {
 pre code {
     background-color: #fff;
     color:#737373;
-    font-size: 11px;
+    font-size: 13px;
+    line-height:23px;
     padding: 0;
 }
 sup {
@@ -129,7 +130,7 @@ sup {
     line-height: 0;
 }
 * {
-	-webkit-print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
 }
 @media screen and (min-width: 914px) {
     body {
@@ -138,10 +139,10 @@ sup {
     }
 }
 @media print {
-	body,code,pre code,h1,h2,h3,h4,h5,h6 {
-		color: black;
-	}
-	table, pre {
-		page-break-inside: avoid;
-	}
+    body,code,pre code,h1,h2,h3,h4,h5,h6 {
+        color: black;
+    }
+    table, pre {
+        page-break-inside: avoid;
+    }
 }
