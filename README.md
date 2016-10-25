@@ -19,27 +19,26 @@ Markdown is a lightweight markup language with plain text formatting syntax desi
 
 ![boss](public/img/like-a-boss.jpg)
 
-Markdown Worm act as a simple markdown file server.
-Useful on storing & sharing Markdown notes & documents. Especially on a local network with
-you colleagues (I'm doing this right now) 
+Markdown Worm act as a simple markdown file server. Which is useful on storing & sharing Markdown notes & documents, especially on a local network with
+you colleagues (which I'm doing) 
 
 ## Changes since v1.0.1
 
-1. Completely replaced PHP by GoLang, plus you won't need GoLang to run __release tar balls__
-2. You can now add directory under folder __md__
-3. There's __no windows binary release__ this time since I don't use windows (a big virus) :3
+1. Completely rewrite GoLang, speed up & don't need anything to run compiled code
+2. It can now recognize folders under `./md`
+3. Due to the path format difference, there's no Windows version this time (Die MicroSoft!)
 
 ## Showcase
-###1. Generated Markdown File List
+###1. Show File & Folders under `./md`
 
 ![logo](public/img/showcase-1.jpg)
 
-###2. Markdown will be converted to html by [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown)
-
+###2. [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown) convert it
+to HTML
 
 ![logo](public/img/showcase-2.png)
 
-###3. Code syntax will be auto-detected and highlighted by [Highlight.js](https://highlightjs.org/)
+###3. [Highlight.js](https://highlightjs.org/) detect code type and highlight it for you (theme darcula)
 
 ![logo](public/img/showcase-3.jpg)
 
@@ -64,7 +63,6 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
     wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
     tar zxvf mdworm-2.0.0-linux.tar.gz
     
-    
 2. Run
     
    cd mdworm-2.0.0-*
@@ -75,7 +73,9 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
 ## Arguments
 
 You can use `-p` to change the default port (`2333`), `-t` to change default code theme (`./public/css/themes/default.css`).
-A full list of code theme can be found under `./public/css/themes/`, here are argument examples:
+A full list of highlights theme can be found under `./public/css/themes/`, 
+
+here are some command line examples:
 
     # listen on port 6666
     ./mdworm -p 6666
@@ -84,14 +84,10 @@ A full list of code theme can be found under `./public/css/themes/`, here are ar
     # listen on port 6666 & change default theme to darcula
     ./mdworm -p 6666 -t darcula
 
-## Github is a lonely place
-
-Well, it looks like __I AM JUST RELEASING
-TARBALLS TO MYSELF!!!!__. For god sake no matter what you think of my code, just leave 
-a comment under the issues tab. I just want to know if there's still somebody alive
-on this website, thanks.
-
+    # to run in background just add &
+    ./mdworm -p 6666 &
+    
 ## MIT License
 
 ===
-Beichen Li 2016-10-24
+Beichen Li 2016-10-25
