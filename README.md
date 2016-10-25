@@ -20,33 +20,31 @@ Markdown is a lightweight markup language with plain text formatting syntax desi
 ![boss](public/img/like-a-boss.jpg)
 
 Markdown Worm act as a simple markdown file server. Which is useful on storing & sharing Markdown notes & documents, especially on a local network with
-you colleagues (which I'm doing) 
+you colleagues (which I'm doing right now) 
 
 ## Changes since v1.0.1
 
-1. Completely rewrite GoLang, speed up & don't need anything to run compiled code
+1. Completely rewritten by GoLang, speed up & don't need anything to run compiled code
 2. It can now recognize folders under `./md`
-3. No windows support by now
 
 ## Showcase
 ###1. Show File & Folders under `./md`
 
 ![logo](public/img/showcase-1.jpg)
 
-###2. [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown) convert it
-to HTML
+###2. [golang-markdown](https://github.com/golang-commonmark/markdown) will convert md to HTML
 
 ![logo](public/img/showcase-2.jpg)
 
-###3. [Highlight.js](https://highlightjs.org/) detect code type and highlight it for you (theme darcula)
+###3. [Highlight.js](https://highlightjs.org/) highlights your code
 
 ![logo](public/img/showcase-3.jpg)
 
 ## Notice
 
-`golang-commonmark` has a weird feature, which __requires__ you to add a space between
-title text and hash tags, for example `#title#` won't be parsed correctly, but
-`# title #` will work fine
+The new md parser has a weird feature, which __requires__ you to add a space between
+title and its surrounding hash tags, for example `#title#` won't be parsed correctly, but
+`# title #` will
 
 ## Install
 
@@ -57,7 +55,6 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
         cd /to/dir/
         # For Mac
         wget https://github.com/bclicn/MarkdownWorm/releases/download/2.0.0/mdworm-2.0.0-darwin-bin.tar.gz
-
         tar zxvf mdworm-2.0.0-darwin.tar.gz
     
         # For Linux
@@ -71,21 +68,28 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
    
 3. Open your browser and type `localhost:2333`
 
+### Win
+
+Not supported by now (Windows Sucks), but however you can easily achieve that by modifying the source code.
+If you want one really bad, please let me know by submitting an issue
+
 ## Arguments
 
-You can use `-p` to change the default port (`2333`), `-t` to change default code theme (`./public/css/themes/default.css`).
-A full list of highlights theme can be found under `./public/css/themes/`, 
+You can use `-p` to change the default port (2333), `-t` to change default code theme (./public/css/themes/default.css).
+A full list of highlights themes can be found under `./public/css/themes/`
 
-here are some command line examples:
+Here are some command line examples:
 
     # listen on port 6666
     ./mdworm -p 6666
-    # change default theme to darcula
+    
+    # change highlight theme to darcula
     ./mdworm -t darcula
-    # listen on port 6666 & change default theme to darcula
+    
+    # listen on port 6666 & change highlight theme to darcula
     ./mdworm -p 6666 -t darcula
 
-    # to run in background just add &
+    # to run it in background, just add &
     ./mdworm -p 6666 &
     
 ## MIT License

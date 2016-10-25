@@ -72,6 +72,11 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 已测试过的系统: 最新版的OSX (用Mac写的), CentOS 6.5, 7
 
+### Windows
+
+暂不支持(因为路径格式不一样).但是你可以轻松的通过修改源代码并在Win上编译解决这个问题.
+如果你特别想♂要一个编译后的Win版, 请在issue中提出谢谢 
+
 ## 参数
 
 使用 `-p`修改默认服务器端口2333, `-t`修改默认代码高亮样式`./public/css/default.css`。
@@ -79,8 +84,10 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
     # 更改服务器端口为6666
     ./mdworm -p 6666
+    
     # 更改代码高亮样式为 darcula
     ./mdworm -t darcula
+    
     # 更改服务器端口为6666 并 更改代码高亮样式为 darcula
     ./mdworm -p 6666 -t darcula
 
