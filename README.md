@@ -15,7 +15,7 @@ GoLang Markdown viewer, based on [golang-commonmark/markdown](https://github.com
 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-## Finish your targets ~~quietly~~ LIKE A BOSS
+## Finish your targets ~~quickly~~ LIKE A BOSS
 
 ![boss](public/img/like-a-boss.jpg)
 
@@ -36,7 +36,7 @@ you colleagues (which I'm doing)
 ###2. [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown) convert it
 to HTML
 
-![logo](public/img/showcase-2.png)
+![logo](public/img/showcase-2.jpg)
 
 ###3. [Highlight.js](https://highlightjs.org/) detect code type and highlight it for you (theme darcula)
 
