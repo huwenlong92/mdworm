@@ -56,11 +56,12 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
 
         cd /to/dir/
         # For Mac
-        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/2.0.0/mdworm-2.0.0-darwin-bin.tar.gz
+
         tar zxvf mdworm-2.0.0-darwin.tar.gz
     
         # For Linux
-        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+        https://github.com/bclicn/MarkdownWorm/releases/download/2.0.0/mdworm-2.0.0-linux-bin.tar.gz
         tar zxvf mdworm-2.0.0-linux.tar.gz
     
 2. Run

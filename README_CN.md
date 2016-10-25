@@ -53,13 +53,14 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 1. 下载解压
 
-        cd /to/dir/
-        # Mac
-        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+        cd /to/dir
+        
+        # For Mac
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/2.0.0/mdworm-2.0.0-darwin-bin.tar.gz
         tar zxvf mdworm-2.0.0-darwin.tar.gz
-
-        # Linux
-        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+    
+        # For Linux
+        https://github.com/bclicn/MarkdownWorm/releases/download/2.0.0/mdworm-2.0.0-linux-bin.tar.gz
         tar zxvf mdworm-2.0.0-linux.tar.gz
     
 2. 运行
