@@ -20,16 +20,17 @@ Markdown是一个轻量级标记语言，能够被轻易的转化为HTML或者PD
 ![boss](public/img/like-a-boss.jpg)
 
 Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博客上分享各种Markdown文档。它在显示时可以自动把你的Markdown转换成HTML，并且用Highlight.js自动
-识别代码语法,并做代码高亮。
+识别代码语法并高亮。
 
 ## v2.0.0变动
 
-1. 用GoLang代替PHP，提升速度,现在你什么都不需要安装就可以直接部署编译后的代码了
+1. 用GoLang代替PHP，提升速度. 现在你可以直接部署编译后的代码了
 2. 程序现在可以识别`./md`下的文件夹结构了
-3. 由于路径方式和Mac,Linux有区别,加上我万年不用PC, 故没有写Windows版
+3. 暂时不支持Windows系统
 
-## 朋友,你~~听说过安利~~要看看图片吗?
-###1. 像阿帕奇一样列出`./md`下的文件树
+## 朋友,你~~听说过安利吗~~要看看图片吗?
+
+###1. 列出`./md`下的文件树
 
 ![logo](public/img/showcase-1.jpg)
 
@@ -52,15 +53,14 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 1. 下载解压
 
-    	cd /to/dir/
-    	# Mac
-    	wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
-    	tar zxvf mdworm-2.0.0-darwin.tar.gz
-    
-    	# Linux
-   		wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
-    	tar zxvf mdworm-2.0.0-linux.tar.gz
-    
+        cd /to/dir/
+        # Mac
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+        tar zxvf mdworm-2.0.0-darwin.tar.gz
+
+        # Linux
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+        tar zxvf mdworm-2.0.0-linux.tar.gz
     
 2. 运行
     
@@ -73,7 +73,7 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 ## 参数
 
-要修改默认服务器端口（2333），使用 `-p`, 要修改代码高亮样式，使用`-t` 。
+使用 `-p`修改默认服务器端口2333, `-t`修改默认代码高亮样式`./public/css/default.css`。
 全部高亮样式见`./public/css/`, 下面是参数使用举例:
 
     # 更改服务器端口为6666
@@ -83,7 +83,7 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
     # 更改服务器端口为6666 并 更改代码高亮样式为 darcula
     ./mdworm -p 6666 -t darcula
 
-对于不熟悉Linux的同学,如果你想让它以背景线程运行，在命令结尾加上`&`就好了，比如
+如果你想让它以背景线程运行，在命令结尾加上`&`就好了，比如
 	
 	./mdworm -p 6666 -t darcula &
 

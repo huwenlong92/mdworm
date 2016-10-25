@@ -15,7 +15,7 @@ GoLang Markdown viewer, based on [golang-commonmark/markdown](https://github.com
 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-## Share your Markdown ~~Like a Man~~ LIKE A BOSS
+## Finish your targets ~~quietly~~ LIKE A BOSS
 
 ![boss](public/img/like-a-boss.jpg)
 
@@ -26,7 +26,7 @@ you colleagues (which I'm doing)
 
 1. Completely rewrite GoLang, speed up & don't need anything to run compiled code
 2. It can now recognize folders under `./md`
-3. Due to the path format difference, there's no Windows version this time (Die MicroSoft!)
+3. No windows support by now
 
 ## Showcase
 ###1. Show File & Folders under `./md`
@@ -54,19 +54,19 @@ title text and hash tags, for example `#title#` won't be parsed correctly, but
 
 1. Download & Unzip
 
-    cd /to/dir/
-    # For Mac
-    wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
-    tar zxvf mdworm-2.0.0-darwin.tar.gz
+        cd /to/dir/
+        # For Mac
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-darwin.tar.gz
+        tar zxvf mdworm-2.0.0-darwin.tar.gz
     
-    # For Linux
-    wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
-    tar zxvf mdworm-2.0.0-linux.tar.gz
+        # For Linux
+        wget https://github.com/bclicn/MarkdownWorm/releases/download/v2.0.0/mdworm-2.0.0-linux.tar.gz
+        tar zxvf mdworm-2.0.0-linux.tar.gz
     
 2. Run
     
-   cd mdworm-2.0.0-*
-   ./mdworm
+        cd mdworm-2.0.0-*
+        ./mdworm
    
 3. Open your browser and type `localhost:2333`
 
