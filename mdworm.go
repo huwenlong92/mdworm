@@ -18,9 +18,7 @@ import (
 // github:	https://github.com/bclicn/mdWorm
 // license:	MIT (free to use)
 // platforms:	OSX, Linux
-// usage:	$./mdworm &
-//		or
-//		$./mdworm <port> &
+// usage:	$./mdworm [-p <port>] [-t <theme>] [&]
 
 const (
 	TITLE	    =   `Markdown Worm`
