@@ -24,7 +24,7 @@ you colleagues (which I'm doing right now)
 
 ## Changes since v1.0.1
 
-1. Completely rewritten by GoLang, speed up & don't need anything to run compiled code
+1. Completely rewritten in GoLang, which provide performance improvements & runnable binaries
 2. It can now recognize folders under `./md`
 
 ## Showcase
