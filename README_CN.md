@@ -11,24 +11,18 @@ GoLang Markdown浏览器, 基于[golang-commonmark/markdown](https://github.com/
 
 [English Version](README.md)
 
-## 什么是Markdown ?
+## 简介
 
-Markdown是一个轻量级标记语言，能够被轻易的转化为HTML或者PDF。Markdown经常被用来撰写readme文件，用来在论坛上发布消息，或者将简单的文本转化为复杂的表现形式。
-
-## 像个男人一样~~十秒就射~~ 分享你的文件！
-
-![boss](public/img/like-a-boss.jpg)
-
-Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博客上分享各种Markdown文档。它在显示时可以自动把你的Markdown转换成HTML，并且用Highlight.js自动
-识别代码语法并高亮。
+Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博客上分享各种Markdown文档。
+它在可以自动把你的Markdown转换成HTML，并且用Highlight.js自动识别代码语法并高亮。
 
 ## v2.0.0变动
 
-1. 用GoLang代替PHP，提升速度. 现在你可以直接部署编译后的代码了
-2. 程序现在可以识别`./md`下的文件夹结构了
-3. 暂时不支持Windows系统
+1. 用GoLang代替PHP
+2. 程序现在可以识别`./md`下的文件夹了
+3. 这个版本不支持Windows系统
 
-## 朋友,你~~听说过安利吗~~要看看图片吗?
+## 展示
 
 ###1. 列出`./md`下的文件树
 
@@ -44,7 +38,7 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 ## 注意
 
-由于更换了新的Markdown解析器`golang-commonmark`，现在你必须把标题写成`# title #`或者`# title`,
+由于更换了新的Markdown解析器`golang-commonmark`，现在你必须把标题写成`# title #`而不是`#title#`,
 否则会有解析错误
 
 ##  安装
@@ -70,13 +64,6 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
    
 3. 打开浏览器输入 `localhost:2333`
 
-已测试过的系统: 最新版的OSX (用Mac写的), CentOS 6.5, 7
-
-### Windows
-
-暂不支持(因为路径格式不一样).但是你可以轻松的通过修改源代码并在Win上编译解决这个问题.
-如果你特别想♂要一个编译后的Win版, 请在issue中提出谢谢 
-
 ## 参数
 
 使用 `-p`修改默认服务器端口2333, `-t`修改默认代码高亮样式`./public/css/default.css`。
@@ -97,4 +84,4 @@ Markdown Worm一般部署在Linux服务器上，用于在公司内网或者博�
 
 ## MIT License
 ===
-Beichen Li 2016-10-25
+Beichen Li 2016-11-1

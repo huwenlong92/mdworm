@@ -6,26 +6,30 @@
 
 __v2.0.0__
 
-GoLang Markdown viewer, based on [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown), 
+A simple GoLang Markdown viewer, based on [golang-commonmark/markdown](https://github.com/golang-commonmark/markdown), 
 [Mou](http://25.io/mou/), and [HighlightJS](https://highlightjs.org/)
 
 [中文版说明](README_CN.md)
 
-## What is Markdown ?
+## Intro
 
-Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+Markdown Worm is a simple GoLang file server for storing & sharing Markdown notes.
+It's useful for you and your teammates to share technical documents and thoughts. 
+One can easily write a markdown doc and upload it to mdworm by a FTP client. 
+You can see the content of Markdown file as a rendered html on your web browser.
 
-## Finish your targets ~~quickly~~ LIKE A BOSS
+## Usage
 
-![boss](public/img/like-a-boss.jpg)
-
-Markdown Worm act as a simple markdown file server. Which is useful on storing & sharing Markdown notes & documents, especially on a local network with
-you colleagues (which I'm doing right now) 
+1. download mdworm binary release and place its folder under a path which can be accessed by FTP client.
+2. start mdworm by `$./mdworm -p <port>`, also make sure that port is allowed by firewall
+3. put some markdown files (or new folders) under `./md`
+4. open your browser and visit `http://<mdworm-host>:<mdworm-port>`
 
 ## Changes since v1.0.1
 
-1. Completely rewritten in GoLang, which provide performance improvements & runnable binaries
-2. It can now recognize folders under `./md`
+The first version of mdworm is written in PHP, which is pretty slow and old fashioned, so at
+v2.0.0, it was rewritten by GoLang. Plus mdworm can now recognize folders under `./md`.
+Plus plus this time windows is not supported.
 
 ## Showcase
 ###1. Show File & Folders under `./md`
@@ -43,8 +47,8 @@ you colleagues (which I'm doing right now)
 ## Notice
 
 The new md parser has a weird feature, which __requires__ you to add a space between
-title and its surrounding hash tags, for example `#title#` won't be parsed correctly, but
-`# title #` will
+title and its surrounding hash tags, for example `#title#` won't be parsed correctly, you
+will write `# title #` instead
 
 ## Install
 
@@ -67,32 +71,21 @@ title and its surrounding hash tags, for example `#title#` won't be parsed corre
         ./mdworm
    
 3. Open your browser and type `localhost:2333`
-
-### Win
-
-Not supported by now (Windows Sucks), but however you can easily achieve that by modifying the source code.
-If you want one really bad, please let me know by submitting an issue
-
-## Arguments
-
-You can use `-p` to change the default port (2333), `-t` to change default code theme (./public/css/themes/default.css).
+4. You can also point out the port by `-p`, code theme by `-t`, like bellow,
 A full list of highlights themes can be found under `./public/css/themes/`
 
-Here are some command line examples:
+        # listen on port 6666
+        ./mdworm -p 6666
+        
+        # change highlight theme to darcula
+        ./mdworm -t darcula
+        
+        # listen on port 6666 & change highlight theme to darcula
+        ./mdworm -p 6666 -t darcula
+        
+5. If you want to (usually will) run in daemon mode, just add `&` at the end
 
-    # listen on port 6666
-    ./mdworm -p 6666
-    
-    # change highlight theme to darcula
-    ./mdworm -t darcula
-    
-    # listen on port 6666 & change highlight theme to darcula
-    ./mdworm -p 6666 -t darcula
-
-    # to run it in background, just add &
-    ./mdworm -p 6666 &
-    
 ## MIT License
 
 ===
-Beichen Li 2016-10-25
+Beichen Li 2016-11-1

@@ -13,12 +13,10 @@ import (
 )
 
 // Markdown Worm
-// author: 	Beichen Li, 2016
-// email:	bclicn@gmail.com
-// github:	https://github.com/bclicn/mdWorm
-// license:	MIT (free to use)
-// platforms:	OSX, Linux
-// usage:	$./mdworm [-p <port>] [-t <theme>] [&]
+// v2.0.0
+// Beichen Li, bclicn@gmail.com. relidin@126.com, 2016
+// A simple markdown viewer for OSX and Linux
+// usage: $./mdworm [-p <port>] [-t <theme>]
 
 const (
 	TITLE	    =   `Markdown Worm`
